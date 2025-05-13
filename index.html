@@ -643,6 +643,10 @@
             66% { border-color: #5FD068; }
             100% { border-color: #FF4E9B; }
         }
+        @media (max-width: 640px) {
+  .container { padding-left: 1rem; padding-right: 1rem; }
+}
+
     </style>
 </head>
 
@@ -710,7 +714,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen pt-20 overflow-hidden flex items-center bg-space-dark">
+    <section id="hero" class="relative min-h-screen pt-20 mt-16 overflow-hidden flex items-center bg-space-dark">
         <!-- Background spatial animé -->
         <div class="absolute inset-0 opacity-20 z-0">
             <!-- Grille de fond avec effet parallaxe -->
@@ -730,7 +734,9 @@
         
         <!-- Trou de ver occasionnel -->
         <div class="wormhole-effect absolute inset-0 z-5 opacity-0 pointer-events-none">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200vh] h-[200vh] rounded-full bg-[radial-gradient(circle,rgba(255,78,155,0.02)_0%,transparent_70%)] animate-[pulse_15s_ease-in-out_infinite]"></div>
+            <div class="absolute inset-0 rounded-full w-screen h-screen …"></div>
+          </div>
+          
         </div>
         
         <div class="container mx-auto px-4 relative z-20 pt-12 md:pt-0">
@@ -2860,7 +2866,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="text-metal-gray hover:text">
+                            <a href="#contact" class="text-metal-gray hover:text-mutant-green transition-colors flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
@@ -3247,7 +3253,6 @@ document.addEventListener('mouseup', () => {
         const flyingObjects = [
             'https://i.postimg.cc/1XYWrJgM/futurama-ship-express-vector-37262-removebg-preview.png',
             'https://i.postimg.cc/g0vTbV5k/blender-removebg-preview.png',
-            'https://i.postimg.cc/Yqrtgk9k/frog.jpg'
         ];
         
         for (let i = 0; i < 3; i++) {
